@@ -1,0 +1,18 @@
+
+{
+  "dashboardTitle": "Interactive Sports Statistics",
+  "playerSelection": "Player selection",
+  "periodSelection": "Period",
+  "goalsPerSeason": "Goals and fouls per season",
+  "playerComparison": "Players comparison",
+  "goals": "Goals",
+  "assists": "Assists",
+  "fouls": "Fouls",
+  "description": "This dashboard allows you to explore player performances across different metrics",
+  "language": "Language",
+  "goalsScored": "Goals scored",
+  "season": "Season",
+  "comparison": "Comparison",
+  "selectPlayer": "Select player",
+  "selectPeriod": "Select period"
+}

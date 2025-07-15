@@ -1,0 +1,18 @@
+
+{
+  "dashboardTitle": "Statistiques sportives interactives",
+  "playerSelection": "Choix du joueur",
+  "periodSelection": "Période",
+  "goalsPerSeason": "Buts et fautes par saison",
+  "playerComparison": "Comparaison des joueurs",
+  "goals": "Buts",
+  "assists": "Passes décisives",
+  "fouls": "Fautes",
+  "description": "Ce tableau de bord vous permet d'explorer les performances des joueurs à travers différentes métriques",
+  "language": "Langue",
+  "goalsScored": "Buts marqués",
+  "season": "Saison",
+  "comparison": "Comparaison",
+  "selectPlayer": "Sélectionner un joueur",
+  "selectPeriod": "Sélectionner une période"
+}
