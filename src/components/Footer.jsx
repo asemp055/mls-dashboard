@@ -8,7 +8,7 @@ const Footer = () => {
     <footer>
       <p>{t('dashboardTitle')} - © {new Date().getFullYear()}</p>
       <p>
-        <a href="https://github.com/votre-username/mls-dashboard" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/asemp055/mls-dashboard" target="_blank" rel="noopener noreferrer">
           GitHub Repository
         </a> | 
         <a href="mailto:contact@example.com">Contact</a>
