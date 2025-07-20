@@ -12,7 +12,7 @@ import './styles.css';
 
 function App() {
   const [selectedPlayer, setSelectedPlayer] = useState(1);
-  const [yearRange, setYearRange] = useState([2015, 2025]);
+  const [yearRange, setYearRange] = useState([2015, 2025]); // Période complète 2015-2025
   const { t, i18n } = useTranslation();
   const { language } = useContext(LanguageContext);
 
@@ -26,8 +26,14 @@ function App() {
     setSelectedPlayer(parseInt(e.target.value));
   };
 
+  // Gestion robuste de la période étendue
   const handleYearChange = (newRange) => {
-    setYearRange(newRange);
+    // Validation des bornes
+    const validatedRange = [
+      Math.max(newRange[0], years[0]),
+      Math.min(newRange[1], years[years.length - 1])
+    ];
+    setYearRange(validatedRange);
   };
 
   return (
@@ -40,12 +46,16 @@ function App() {
           selectedPlayer={selectedPlayer} 
           onPlayerChange={handlePlayerChange} 
         />
+        {/* YearSlider avec plage étendue */}
         <YearSlider 
-          years={years} 
           yearRange={yearRange} 
-          onYearChange={handleYearChange} 
+          onYearChange={handleYearChange}
+          minYear={years[0]}
+          maxYear={years[years.length - 1]}
         />
+        
       </div>
+
       
       <div className="charts">
         <div className="chart-container">
